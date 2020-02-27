@@ -14,5 +14,7 @@ db.execute <<-SQL
 
 
 db.execute("insert into users(email) values(?);",["sam@example.com"]);
+db.execute("insert into users(email) values(?);",["jane@life.co"]);
+db.execute("insert into users(email) values(?);",["rachel@me.com"]);
 rows = db.execute("SELECT * FROM users;")
 puts rows
